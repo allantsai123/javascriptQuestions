@@ -2,7 +2,8 @@
  * Created by Allan on 8/15/2016.
  */
 
-// For each index i, we only need to know one index that maximize the sum A[i] + A[index] + (i - index) = A[i] + i + (A[index] - index). Which mean, we only need to maintain an index, which A[index] - index is maximum.
+// For each index i, know one index that maximize the sum A[i] + A[index] + (i - index) = A[i] + i + (A[index] - index). 
+// which A[index] - index is maximum.
 function solution(A) {
     var index=1,result=0;
 
